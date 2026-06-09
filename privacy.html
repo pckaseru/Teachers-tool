@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Teacher Assistant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #1e3a8a; /* Indigo-800 jaisa color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        button:hover {
+            background-color: #1e40af;
+        }
+        #hindi-content {
+            display: none; /* By default Hindi hide rahega */
+        }
+        h1, h2 {
+            color: #1e3a8a;
+        }
+        .container {
+            background: #f9fafb;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="lang-switch">
+        <button onclick="toggleLanguage()" id="lang-btn">हिंदी में पढ़ें 🇮🇳</button>
+    </div>
+
+    <div class="container">
+        <!-- English Content -->
+        <div id="english-content">
+            <h1>Privacy Policy</h1>
+            <p><strong>Last Updated: June 2026</strong></p>
+
+            <h2>1. Data Collection</h2>
+            <p>We do not collect, store, or share any of your personal data. This app acts as a bridge to provide direct access to various government educational portals.</p>
+
+            <h2>2. Third-Party Links</h2>
+            <p>This app contains links to external government websites (e.g., Shala Darpan, SSO, etc.). We do not control these websites, and their privacy policies apply when you visit them. We recommend reviewing their policies.</p>
+
+            <h2>3. Security</h2>
+            <p>Since we do not collect data, there is no risk of data leakage from our side.</p>
+
+            <h2>4. Disclaimer</h2>
+            <p>These portals are managed by their respective government authorities. We are not affiliated with any government body. We only provide navigation to these public domains.</p>
+
+            <h2>5. Contact Us</h2>
+            <p>If you have any questions or concerns, please contact us via the app's support section.</p>
+        </div>
+
+        <!-- Hindi Content -->
+        <div id="hindi-content">
+            <h1>गोपनीयता नीति (Privacy Policy)</h1>
+            <p><strong>अंतिम अपडेट: जून 2026</strong></p>
+
+            <h2>1. डेटा संग्रहण (Data Collection)</h2>
+            <p>हम आपका कोई भी व्यक्तिगत डेटा एकत्र (collect), स्टोर या साझा नहीं करते हैं। यह ऐप केवल विभिन्न सरकारी शैक्षिक पोर्टल्स तक सीधी पहुँच प्रदान करने के लिए एक माध्यम के रूप में कार्य करती है।</p>
+
+            <h2>2. थर्ड-पार्टी लिंक (Third-Party Links)</h2>
+            <p>इस ऐप में बाहरी सरकारी वेबसाइटों (जैसे: शाला दर्पण, SSO, आदि) के लिंक शामिल हैं। हम इन वेबसाइटों को नियंत्रित नहीं करते हैं, और जब आप उन पर जाते हैं, तो उनकी गोपनीयता नीतियां लागू होती हैं। हम आपको उनकी नीतियों की समीक्षा करने की सलाह देते हैं।</p>
+
+            <h2>3. सुरक्षा (Security)</h2>
+            <p>चूँकि हम कोई डेटा एकत्र नहीं करते हैं, इसलिए हमारी ओर से डेटा लीक होने का कोई जोखिम नहीं है।</p>
+
+            <h2>4. अस्वीकरण (Disclaimer)</h2>
+            <p>ये पोर्टल उनके संबंधित सरकारी प्राधिकरणों द्वारा प्रबंधित किए जाते हैं। हम किसी भी सरकारी संस्था से संबद्ध नहीं हैं। हम केवल इन सार्वजनिक डोमेन तक नेविगेशन प्रदान करते हैं।</p>
+
+            <h2>5. हमसे संपर्क करें (Contact Us)</h2>
+            <p>यदि आपके कोई प्रश्न हैं, तो कृपया ऐप के सपोर्ट सेक्शन के माध्यम से हमसे संपर्क करें।</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleLanguage() {
+            var eng = document.getElementById("english-content");
+            var hin = document.getElementById("hindi-content");
+            var btn = document.getElementById("lang-btn");
+
+            if (eng.style.display === "none") {
+                eng.style.display = "block";
+                hin.style.display = "none";
+                btn.innerHTML = "हिंदी में पढ़ें 🇮🇳";
+            } else {
+                eng.style.display = "none";
+                hin.style.display = "block";
+                btn.innerHTML = "Read in English 🇬🇧";
+            }
+        }
+    </script>
+
+</body>
+</html>
